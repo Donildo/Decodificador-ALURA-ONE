@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/descodificador-de-chave.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/Logo.png" alt="Logo da alura">
+    </header>
+    <main>
+        <section class="entrada-1">
+            
+            <textarea name="input" class="input" id="" cols="30" rows="3" placeholder="Digite seu texto"></textarea>
+        
+            <div class="container-intrucao">
+                <img class="img-instrucao" src="./img/Vector.png" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="container-botao">
+                <button class="botao-criptografar" onclick="renderizar()">Criptografar</button>
+                <button class="botao-descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="saida-1">
+            <div class="saida-1-sem-mensagem">
+                <img class="saida-1-img" src="./img/High quality products 1 1.svg" alt="">
+                <div class="saida-1-info">
+                    <h2 class="saida-1-info-h2">Nenhuma mensagem encontrada</h2>
+                    <p class="texto-desejado">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+                <p class="texto-criptografado"></p>
+                <button class="botao-copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li>Desenvolvedor Front-end Donildo Aleixo</li>
+            <li>|</li>
+            <li>
+                <a href="https://github.com/Donildo" target="_blank"><img src="img/github-icon.svg" alt="Logo GitHub">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/donildo-brito/" target="_blank"><img src="img/linkedin-icon.svg" alt="Logo do linkedin">LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+<script src="./js/main.js"></script>
+</html>

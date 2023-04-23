@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  
+    background-color: #e9ecf8;
+}
+header{
+    position: absolute;
+}
+main{
+    display: flex;
+}
+
+.logo{
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+.input{
+    background-color: #e9ecf8;
+    width: 45vw;
+    min-height: 10vh;
+    margin-left: 17vw;
+    margin-top: 28vh;
+    font-size: 48px;
+    color: #052051;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+
+.container-intrucao{
+    display: flex;
+    margin-left: 17vw;
+}
+.img-instrucao{
+    margin-right: 8px;
+    margin-bottom: 2.5vh;
+    
+}
+.container-botao{
+    display: flex;
+    margin-left: 17vw;
+    margin-top: 14vh;
+    align-items: center;
+    gap: 1.5vw;
+}
+.botao-criptografar{
+    font-size: 16px;
+    border-radius: 16px;
+    background-color: #0A3871;
+    color: #ffffff;
+    width: 24vw;
+    height: 11vh;
+}
+.botao-descriptografar{
+    font-size: 16px;
+    border-radius: 16px;
+    background-color: #d8dfe8;
+    color: #0A3871;
+    width: 24vw;
+    height: 11vh;
+}
+.saida-1{
+  
+    margin-top: 5vh;
+    margin-left: 2vw;
+    max-width: 30vw;
+    max-height: 90vh;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 32px;
+   
+}
+.texto-desejado{
+    font-size: 16px;
+}
+
+.saida-1-info-h2{
+    margin: 0 auto;
+    max-width: 360px;
+    padding-bottom: 5vh;
+}
+.botao-copiar{
+    font-size: 16px;
+    width: 24vw;
+    height: 11vh;
+    text-align: center;
+    background-color: #ffffff;
+    color: #0A3871;
+    border-radius: 16px;
+   
+    margin: 2vh auto;
+    margin-top: 0.5vh;
+
+    display: none;
+}
+.saida-1-sem-mensagem{
+
+    display: block;
+}
+.texto-criptografado{
+    width: 27vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 70vh;
+    padding-top: 5vh;
+    overflow-y: scroll;
+    display: none;
+}
+footer{
+   margin-top: 5.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #052051;
+    color: #ffffff;
+    min-height: 5vh;
+}
+
+footer ul {
+    display: flex;
+    gap: 9px;
+    list-style: none;
+    font-size: 1.0rem;
+    color: var(--gray-400-color);
+}
+
+footer img {
+    height: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: all 0.15ms;
+}
+
+footer a:hover {
+    opacity: 0.7;
+    transform: scale(1.009);
+    cursor: pointer;
+}
+
+footer a:active {
+    transform: scale(1);
+    transform: translateY(1px);
+}
+
+footer a:link {
+    color: var(--gray-400-color);
+}
+
+footer a:visited {
+    color: var(--current-method-primary-color);
+}
+
+
+@media (max-width: 800px)
+{
+    main{
+        display: block;
+    }
+    .container-intrucao{
+        margin: 0 5vw;
+    }
+    .container-botao{
+        margin: 0 5vw;
+    }
+    .saida-1-img{
+        display: none;
+    }
+    .botao-criptografar{
+        width: 70vw;
+    }
+    .botao-descriptografar{
+        width: 70vw;
+    }
+    .saida-1{
+        min-width: 90vw;
+        margin: 8vh auto;
+        
+    }
+    .saida-1-sem-mensagem{
+        width: 70vw;
+        
+    }
+    .saida-1-info{
+        width: 70vw;
+        margin: 0 10vw;
+        
+    }
+    .saida-1-info-h2{
+        min-width: 70vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    .texto-criptografado{
+        width: 70vw;
+    }
+    .texto-desejado{
+        margin: 0 auto;
+        padding-bottom: 1vh;
+    }
+}
+
+@media (max-width: 400px)
+{   
+    .botao-criptografar{
+        margin: 0 5vw;
+        min-width: 80vw;
+        margin-bottom: 2vh;
+    }
+    .botao-descriptografar{
+        margin: 0 5vw;
+        min-width: 80vw;
+    }
+    .container-botao{
+        display: block;
+    }
+}
